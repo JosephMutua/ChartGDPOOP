@@ -23,6 +23,14 @@ class Car:
         # This method decreases the speed of the car by 7mph
 
         return self.speed - 7
+    
+    def __repr__(self):
+        return  "{}, {}, {}, {}" .format(self.make, self.model, self.year, self.speed)
 
 
-car 1
+car_1 = Car("Toyota","Premio",2010, 20)
+
+print (car_1)
+car_1.accelerate()
+print (car_1.accelerate())
+print (car_1.brake())
